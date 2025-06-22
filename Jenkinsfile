@@ -17,6 +17,7 @@ pipeline {
     stage('Building Docker Image') {
       steps{
         script {
+          sh 'docker context use default'
           dockerImage = docker.build registry + ":$BUILD_NUMBER"
         }
       }
