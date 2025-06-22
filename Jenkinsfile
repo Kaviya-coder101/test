@@ -1,6 +1,6 @@
 pipeline {
   environment {
-    registry = "demo520/cicd-k8s-demo"
+    registry = "demo520/my-spring-app"
     registryCredential = 'docker-hub-credentials'
     dockerImage = ''
   }
