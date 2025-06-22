@@ -8,7 +8,6 @@ pipeline {
   stages {
     stage('Compile') {
       steps {
-        git 'https://github.com/Kaviya-coder101/test'
         script{
                 def mvnHome = tool name: 'MAVEN_HOME', type: 'maven'
                 sh "${mvnHome}/bin/mvn package"
